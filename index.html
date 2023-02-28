@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My-Trip Travel Booking</title>
+
+	<!-- Bootstrap Css File -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Font Awesome File -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+
+	<!-- Custom Css File -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Jquery File -->
+	<script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+
+	<!-- header Section Start -->
+
+	<header class="main-header py-3 fixed-top">
+		<div class="container">
+			<div class="header active d-flex justify-content-between align-items-center">
+				<div class="logo">
+					<a href="#"><img src="images/logo-dark.png" alt="" class="img-fluid"></a>
+				</div>
+				<nav class="menu">
+					<ul class="navbar-list d-lg-flex d-none align-items-center">
+						<li><a href="#" class="me-4"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
+						<li><a href="#flight" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a></li>
+						<li><a href="#" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
+						<li><a href="#" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
+						</li>
+						<li><a href="#" class="me-4"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+						<button type="button" class="btncustom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							Login
+						</button>
+					</ul>
+				</nav>
+				<!-- <div class="login d-lg-block d-none">
+					Button trigger modal 
+				</div> -->
+				<div class="mobile_icon d-lg-none d-block">
+					<i class="fa-solid fa-bars bars"></i>
+					<i class="fa-solid fa-bars-staggered open"></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile Navigation Start -->
+
+		<div class="mobile_nav d-lg-none">
+			<div class="close_icon">
+				<i class="fa-solid fa-xmark close text-light"></i>
+			</div>
+			<div class="mobile_login">
+				<li class="text-center"><img src="images/logo-dark.png" alt=""></li>
+				<li class="text-center mt-3">
+					<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Login
+					</button>
+				</li>
+			</div>
+			<nav>
+				<ul class="mobile_navbar_list d-flex flex-column">
+					<li class="py-3"><a href="#"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
+					<li class="py-3"><a href="#"><i class="fa-brands fa-shopify me-2"></i>Product</a></li>
+					<li class="py-3"><a href="#"><i class="fa-solid fa-user-group me-2"></i>About</a></li>
+					<li class="py-3"><a href="#"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>Services</a></li>
+					<li class="py-3"><a href="#"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+				</ul>
+			</nav>
+			<div class="social_icon mx-4 py-3 border-top border-secondary">
+				<span class="text-light">follow us on</span>
+				<ul class="icon_list d-flex mt-2">
+					<li class="me-3"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+					<li class="me-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li class="me-3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li class="me-3"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li class="me-3"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Mobile Navigation End -->
+
+	</header>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Login in MyTrip</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form class="row g-3">
+						<div class="col-12">
+							<label for="inputEmail4" class="form-label">Email</label>
+							<input type="email" class="form-control" id="inputEmail4">
+						</div>
+						<div class="col-12">
+							<label for="inputPassword4" class="form-label">Password</label>
+							<input type="password" class="form-control" id="inputPassword4">
+						</div>
+						<div class="form-check col-12 mx-3">
+							<input class="form-check-input" type="checkbox" id="gridCheck">
+							<label class="form-check-label" for="gridCheck">
+								Remember me
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Let me in</button>
+				</div>
+				<div class="ms-4 my-4">
+					<span>Don't have account</span><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+						class="text-danger mx-2">create new account</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- inner model -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="staticBackdropLabel">Signup in MyTrip</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form class="row g-3">
+						<div class="col-md-6">
+							<label for="fname" class="form-label">First Name</label>
+							<input type="text" class="form-control" id="fname">
+						</div>
+						<div class="col-md-6">
+							<label for="Lname" class="form-label">Last Name</label>
+							<input type="text" class="form-control" aria-label="Lname">
+						</div>
+						<div class="col-12">
+							<label for="inputEmail4" class="form-label">Email</label>
+							<input type="email" class="form-control" id="inputEmail4">
+						</div>
+						<div class="col-12">
+							<label for="inputPassword4" class="form-label">Password</label>
+							<input type="password" class="form-control" id="inputPassword4">
+						</div>
+						<div class="col-12">
+							<label for="Contact" class="form-label">Contact</label>
+							<input type="text" class="form-control" id="contact">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success">count me in</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header Section End -->
+
+	<!-- destination -->
+	<section class="main">
+		<div class="imgsection w-100">
+			<img src="images/bg1.jpg" alt="" width="100%" height="50%">
+			<div class="imghead container">
+				<div class="row align-items-center">
+					<div class="col-12 mx-auto imgcontent">
+						<h1 class="text-center">Explore The World Together</h1>
+						<p class="text-center">Find awesome flight, hotel, tour, car and packages</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- search area start -->
+	<div class="searcharea" id="flight">
+		<div class="container">
+			<div class="searchwrapper">
+				<div class="searchheader">
+					<div class="searchbar">
+						<ul class="nav nav-pill">
+							<li class="nav-item">
+								<button target="1" class="flight pill">
+									<i class="fa-solid fa-plane-departure me-2"></i>
+									Flight
+								</button>
+							</li>
+							<li class="nav-item">
+								<button target="2" class="hotel">
+									<i class="fa-solid fa-hotel me-2"></i>
+									Hotel
+								</button>
+							</li>
+							<li class="nav-item">
+								<button target="3" class="journey">
+									<i class="fa-solid fa-map"></i>
+									Tour
+								</button>
+							</li>
+							<li class="nav-item">
+								<button target="4" class="passanger">
+									<i class="fa-solid fa-taxi"></i>
+									Cabs
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tabcontent">
+					<div class="tabplan d-block">
+						<div class="flightsearch">
+							<form action="./signup.html" method="get" >
+								<div class="flightwrapper">
+									<div class="flightcontent">
+										<div class="flightitem">
+											<!-- flight -->
+											<div class="tabpan1">
+												<div class="row">
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">My Location</label>
+															<div class="formicon my-3">
+																<input type="text" class="form-control" placeholder="Surat" id="location"/>
+																<i class="fa-regular fa-paper-plane"></i>
+																<span id="locationspan"></span>
+															</div>
+															<p>Surat International Airport -vesu </p>
+														</div>
+													</div>
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Destination</label>
+															<div class="formicon my-3">
+																<input type="text" class="form-control" placeholder="Amreli" id="detination"/>
+																<i class="fa-solid fa-plane-departure me-2"></i>
+																<span id="destinationspan"></span>
+															</div>
+															<p>Amreli Airport</p>
+														</div>
+													</div>
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Journey Date and Time</label>
+															<div class="formicon my-3">
+																<input type="date" class="form-control" placeholder="surat" id="datetime" required/>
+																<i class="fa-regular fa-calendar-days"></i>
+																<span id="datespan"></span>
+															</div>
+															<input type="time" class="form-control" value="" required/>
+														</div>
+													</div>
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Passanger, Class</label>
+															<div class="formicon my-3">
+																<input type="number" class="form-control" placeholder="2" id="passanger" min="1" required/>
+																<i class="fa-regular fa-user"></i>
+																<span id="passangerspan"></span>
+															</div>
+															<p>Business</p>
+														</div>
+													</div>
+												</div>
+												<div class="searchbtn">
+													<button type="submit" class="btn-flight" id="search1" onclick="return chakvalflight()">
+														<i class="fa-solid fa-magnifying-glass me-1 fs-6"></i>
+														Search
+													</button>
+												</div>
+											</div>
+											<!-- hotel  -->
+											<div class="tabpan2">
+												<div class="row">
+													<div class="col-lg-4 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Destination</label>
+															<div class="formicon my-3">
+																<input type="text" class="form-control" value="Surat Marriott Hotel" />
+																<i class="fa-solid fa-earth-americas"></i>
+															</div>
+															<p>Athwalines, Surat-395007</p>
+														</div>
+													</div>
+													<div class="col-lg-4 my-2">
+														<div class="formgroup">
+															<div class="formdate d-sm-flex">
+																<div class="fromstart me-md-1">
+																	<label for="" class="mx-2 mt-1">Check-in</label>
+																	<div class="formicon my-3">
+																		<input type="date" class="form-control" value="" />
+																	</div>
+																	<input type="time" class="form-control" value="" />
+																</div>
+																<div class="fromreturn">
+																	<label for="" class="mx-2 mt-1">Check-out</label>
+																	<div class="formicon my-3">
+																		<input type="date" class="form-control" value="" />
+																		<i class="fa-regular fa-calendar-days"></i>
+																	</div>
+																	<input type="time" class="form-control" value="" />
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-4 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Member</label>
+															<div class="formicon my-3">
+																<div class="roomsandguest d-sm-flex">
+																	<div class="rooms me-md-1">
+																		<p for="">Rooms</p>
+																		<input type="number" class="form-control" value="2" />
+																	</div>
+																	<div class="guest">
+																		<p for="">Guest</p>
+																		<input type="number" class="form-control" value="4" />
+																	</div>
+																</div>
+																<i class="fa-solid fa-user-plus"></i>
+																<p class="my-2">family</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="searchbtn">
+													<button type="submit" class="btn-flight" id="search">
+														<i class="fa-solid fa-magnifying-glass me-1 fs-6"></i>
+														Search
+													</button>
+												</div>
+											</div>
+											<!-- journey -->
+											<div class="tabpan3">
+												<div class="row">
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">From</label>
+															<div class="formicon my-3">
+																<input type="text" class="form-control" value="Amreli" />
+																<i class="fa-regular fa-paper-plane"></i>
+															</div>
+															<p>Hotel Darshan</p>
+														</div>
+													</div>
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-3 mt-1">To</label>
+															<div class="formicon my-3">
+																<input type="text" class="form-control" value="Gadhda" />
+																<i class="fa-solid fa-plane-departure me-2"></i>
+															</div>
+															<p>Hotel rangavadhut</p>
+														</div>
+													</div>
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Tour Date and Time</label>
+															<div class="formicon my-3">
+																<input type="date" class="form-control" value="surat" />
+																<i class="fa-regular fa-calendar-days"></i>
+															</div>
+															<input type="time" class="form-control" value="surat" />
+														</div>
+													</div>
+													<div class="col-lg-3 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Passanger, Class</label>
+															<div class="formicon my-3">
+																<input type="number" class="form-control" value="2" />
+																<i class="fa-regular fa-user"></i>
+															</div>
+															<p>Business</p>
+														</div>
+													</div>
+												</div>
+												<div class="searchbtn">
+													<button type="submit" class="btn-flight">
+														<i class="fa-solid fa-magnifying-glass me-1 fs-6"></i>
+														Search
+													</button>
+												</div>
+											</div>
+											<!-- passanger -->
+											<div class="tabpan4">
+												<div class="row">
+													<div class="col-lg-4 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Pick Up</label>
+															<div class="formicon my-3">
+																<input type="text" class="form-control" value="Surat Marriott Hotel" />
+																<i class="fa-solid fa-map-location-dot"></i>
+															</div>
+															<p>Athwalines, Surat-395007</p>
+														</div>
+													</div>
+													<div class="col-lg-4 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Pick Up date and time</label>
+															<div class="formicon my-3">
+																<input type="date" class="form-control" value="" />
+																<i class="fa-regular fa-calendar-days"></i>
+															</div>
+															<input type="time" class="form-control" value="" />
+														</div>
+													</div>
+													<div class="col-lg-4 my-2">
+														<div class="formgroup">
+															<label for="" class="mx-2 mt-1">Pick out date and time</label>
+															<div class="formicon my-3">
+																<input type="date" class="form-control" value="" />
+																<i class="fa-regular fa-calendar-days"></i>
+															</div>
+															<input type="time" class="form-control" value="" />
+														</div>
+													</div>
+												</div>
+												<div class="searchbtn">
+													<button type="submit" class="btn-flight">
+														<i class="fa-solid fa-magnifying-glass me-1 fs-6"></i>
+														Search
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- search area end -->
+
+	<!-- add Section Start -->
+		<section class="servicesummary">
+			<div class="services container">
+				<div class="row servicerow">
+					<div class="sericebox col d-flex">
+						<div class="serimg">
+							<i class="fa-solid fa-earth-europe"></i>
+						</div>
+						<div class="imgcontent">
+							<h5>Worldwide Coverage</h5>
+							<p class="text-muted">It is a long established fact that read will be distracted by the readable content looking at its layout.</p>
+						</div>
+					</div>
+					<div class="sericebox serbox2 col d-flex">
+						<div class="serimg">
+							<i class="fa-solid fa-award"></i>
+						</div>
+						<div class="imgcontent">
+							<h5>Best Quality Services</h5>
+							<p class="text-muted">It is a long established fact that read will be distracted by the readable content looking at its layout.</p>
+						</div>
+					</div>
+					<div class="sericebox serbox3 col d-flex">
+						<div class="serimg">
+							<i class="fa-solid fa-headset"></i>
+						</div>
+						<div class="imgcontent">
+							<h5>24/7 Customer Service</h5>
+							<p class="text-muted">It is a long established fact that read will be distracted by the readable content looking at its layout.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- add Section end -->
+
+	<!-- Custom Js File -->
+	<script src="js/script.js"></script>
+	<script src="js/search.js"></script>
+
+	<!-- Bootstrap js File -->
+	<script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
