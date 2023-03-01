@@ -36,10 +36,10 @@
 					<ul class="navbar-list d-lg-flex d-none align-items-center">
 						<li><a href="#" class="me-4"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
 						<li><a href="#flight" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a></li>
-						<li><a href="#" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
-						<li><a href="#" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
+						<li><a href="tour.html" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
+						<li><a href="about.html" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
 						</li>
-						<li><a href="#" class="me-4"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+						<li><a href="contact.html" class="me-4"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
 						<button type="button" class="btncustom" data-bs-toggle="modal" data-bs-target="#exampleModal">
 							Login
 						</button>
@@ -62,7 +62,7 @@
 				<i class="fa-solid fa-xmark close text-light"></i>
 			</div>
 			<div class="mobile_login">
-				<li class="text-center"><img src="images/logo-dark.png" alt=""></li>
+				<li class="text-center"><img src="images/logo-dark.png" alt="" width="200"></li>
 				<li class="text-center mt-3">
 					<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 						Login
@@ -71,11 +71,13 @@
 			</div>
 			<nav>
 				<ul class="mobile_navbar_list d-flex flex-column">
-					<li class="py-3"><a href="#"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
-					<li class="py-3"><a href="#"><i class="fa-brands fa-shopify me-2"></i>Product</a></li>
-					<li class="py-3"><a href="#"><i class="fa-solid fa-user-group me-2"></i>About</a></li>
-					<li class="py-3"><a href="#"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>Services</a></li>
-					<li class="py-3"><a href="#"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+					<li class="my-3"><a href="#"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
+					<li class="my-3"><a href="booking.html"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a>
+					</li>
+					<li class="my-3"><a href="tour.html"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
+					<li class="my-3"><a href="about.html"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
+					</li>
+					<li class="my-3"><a href="contact.html"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
 				</ul>
 			</nav>
 			<div class="social_icon mx-4 py-3 border-top border-secondary">
@@ -225,7 +227,7 @@
 				<div class="tabcontent">
 					<div class="tabplan d-block">
 						<div class="flightsearch">
-							<form action="./signup.html" method="get" >
+							<form action="./booking.html" method="get">
 								<div class="flightwrapper">
 									<div class="flightcontent">
 										<div class="flightitem">
@@ -236,7 +238,7 @@
 														<div class="formgroup">
 															<label for="" class="mx-2 mt-1">My Location</label>
 															<div class="formicon my-3">
-																<input type="text" class="form-control" placeholder="Surat" id="location"/>
+																<input type="text" class="form-control" placeholder="*Surat" id="location" required />
 																<i class="fa-regular fa-paper-plane"></i>
 																<span id="locationspan"></span>
 															</div>
@@ -247,7 +249,8 @@
 														<div class="formgroup">
 															<label for="" class="mx-2 mt-1">Destination</label>
 															<div class="formicon my-3">
-																<input type="text" class="form-control" placeholder="Amreli" id="detination"/>
+																<input type="text" class="form-control" placeholder="*Amreli" id="detination"
+																	required />
 																<i class="fa-solid fa-plane-departure me-2"></i>
 																<span id="destinationspan"></span>
 															</div>
@@ -256,20 +259,21 @@
 													</div>
 													<div class="col-lg-3 my-2">
 														<div class="formgroup">
-															<label for="" class="mx-2 mt-1">Journey Date and Time</label>
+															<label for="" class="mx-2 mt-1">Date and Time</label>
 															<div class="formicon my-3">
-																<input type="date" class="form-control" placeholder="surat" id="datetime" required/>
+																<input type="date" class="form-control" id="datetime" required />
 																<i class="fa-regular fa-calendar-days"></i>
 																<span id="datespan"></span>
 															</div>
-															<input type="time" class="form-control" value="" required/>
+															<input type="time" class="form-control" value="" required />
 														</div>
 													</div>
 													<div class="col-lg-3 my-2">
 														<div class="formgroup">
 															<label for="" class="mx-2 mt-1">Passanger, Class</label>
 															<div class="formicon my-3">
-																<input type="number" class="form-control" placeholder="2" id="passanger" min="1" required/>
+																<input type="number" class="form-control" placeholder="0" id="passanger" min="1"
+																	required />
 																<i class="fa-regular fa-user"></i>
 																<span id="passangerspan"></span>
 															</div>
@@ -278,7 +282,7 @@
 													</div>
 												</div>
 												<div class="searchbtn">
-													<button type="submit" class="btn-flight" id="search1" onclick="return chakvalflight()">
+													<button type="submit" class="btn-flight" id="search1">
 														<i class="fa-solid fa-magnifying-glass me-1 fs-6"></i>
 														Search
 													</button>
@@ -291,7 +295,7 @@
 														<div class="formgroup">
 															<label for="" class="mx-2 mt-1">Destination</label>
 															<div class="formicon my-3">
-																<input type="text" class="form-control" value="Surat Marriott Hotel" />
+																<input type="text" class="form-control" placeholder="*Surat Marriott Hotel" />
 																<i class="fa-solid fa-earth-americas"></i>
 															</div>
 															<p>Athwalines, Surat-395007</p>
@@ -325,11 +329,11 @@
 																<div class="roomsandguest d-sm-flex">
 																	<div class="rooms me-md-1">
 																		<p for="">Rooms</p>
-																		<input type="number" class="form-control" value="2" />
+																		<input type="number" class="form-control" placeholder="0" min="1" />
 																	</div>
 																	<div class="guest">
 																		<p for="">Guest</p>
-																		<input type="number" class="form-control" value="4" />
+																		<input type="number" class="form-control" placeholder="0" min="1" />
 																	</div>
 																</div>
 																<i class="fa-solid fa-user-plus"></i>
@@ -451,39 +455,48 @@
 	<!-- search area end -->
 
 	<!-- add Section Start -->
-		<section class="servicesummary">
-			<div class="services container">
-				<div class="row servicerow">
-					<div class="sericebox col d-flex">
+	<section class="servicesummary">
+		<div class="services container">
+			<div class="row servicerow">
+				<div class="col">
+					<div class="sericebox d-flex">
 						<div class="serimg">
 							<i class="fa-solid fa-earth-europe"></i>
 						</div>
 						<div class="imgcontent">
 							<h5>Worldwide Coverage</h5>
-							<p class="text-muted">It is a long established fact that read will be distracted by the readable content looking at its layout.</p>
+							<p class="text-muted">It is a long established fact that read will be distracted by the readable content
+								looking at its layout.</p>
 						</div>
 					</div>
-					<div class="sericebox serbox2 col d-flex">
+				</div>
+				<div class="col">
+					<div class="sericebox serbox2 d-flex">
 						<div class="serimg">
 							<i class="fa-solid fa-award"></i>
 						</div>
 						<div class="imgcontent">
 							<h5>Best Quality Services</h5>
-							<p class="text-muted">It is a long established fact that read will be distracted by the readable content looking at its layout.</p>
+							<p class="text-muted">It is a long established fact that read will be distracted by the readable content
+								looking at its layout.</p>
 						</div>
 					</div>
-					<div class="sericebox serbox3 col d-flex">
+				</div>
+				<div class="col">
+					<div class="sericebox serbox3 d-flex">
 						<div class="serimg">
 							<i class="fa-solid fa-headset"></i>
 						</div>
 						<div class="imgcontent">
 							<h5>24/7 Customer Service</h5>
-							<p class="text-muted">It is a long established fact that read will be distracted by the readable content looking at its layout.</p>
+							<p class="text-muted">It is a long established fact that read will be distracted by the readable content
+								looking at its layout.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 	<!-- add Section end -->
 
 	<!-- Custom Js File -->
