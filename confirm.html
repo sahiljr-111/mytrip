@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - myTrip</title>
+  <title>Confirm Ticket - myTrip</title>
 
   <!-- Bootstrap Css File -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -88,8 +88,8 @@
 
   </header>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -168,102 +168,73 @@
 
   <!-- Header Section End -->
 
-  <!-- tour -->
-  <section>
-    <div class="tourselect">
-      <div class="datafilling container">
-        <div class="row">
-          <div class="col-lg-9">
-            <form class="row g-3 bg-white bookform px-5 my-1">
-              <h4 class="m-2 p-3 text-center">Personal info</h4>
-              <div class="col-md-6">
-                <label for="First name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="First name">
+  <!-- Plane -->
+    <section class="confirmsection">
+      <div class="container">
+        <div class="verify">
+          <div class="row">
+            <div class="col-8">
+              <div class="imgbox">
+                <img src="images/flight1.jpg" alt="" width="100%">
               </div>
-              <div class="col-md-6">
-                <label for="First name" class="form-label">Surname</label>
-                <input type="text" class="form-control" id="First name">
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="mb-3">
-                <label for="validationTextarea" class="form-label">Comment</label>
-                <textarea class="form-control" id="validationTextarea" placeholder="Leave text here...."
-                  required></textarea>
-                <div class="invalid-feedback"></div>
-              </div>
-
-              <div class="col-12 d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary w-50">Submit</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-3">
-            <div class="additionl mb-3">
-              <div class="additionlinfo bg-white">
-                <div class="captioncall pt-5">
-                  <h5 class="text-center">Why Book With Us?</h5>
+              <div class="captions d-md-flex justify-content-between">
+                <div class="imgcap my-3">
+                  <h3>Surat - Amreli</h3>
+                  <h6 class="text-muted">One way Trip</h6>
                 </div>
-                <div class="lists p-4">
-                  <ul class="px-3">
-                    <li class="my-3"><i class="fa-solid fa-dollar-sign mx-3"></i>Best Price Guarantee</li>
-                    <li class="my-3"><i class="fa-solid fa-headphones mx-3"></i>24/7 Customer Care</li>
-                    <li class="my-3"><i class="fa-solid fa-globe mx-3"></i>Hand Picked Tours </li>
-                    <li class="my-3"><i class="fa-regular fa-flag mx-3"></i>Travel Insureance</li>
-                    <li class="my-3"><i class="fa-solid fa-taxi mx-3"></i> Hygienic Vehicle</li>
-                  </ul>
+                <div class="caprev my-3">
+                  <span class="badge text-bg-warning">4.7</span>
+                  <span class="fw-bold">Excellent</span>
+                  <span>(2.5k Reviews)</span>
                 </div>
               </div>
             </div>
-            <div class="additionl">
-              <div class="additionlinfo  bg-white">
-                <div class="captioncall pt-5">
-                  <h5 class="text-center">Get A Question?</h5>
+            <div class="col-4">
+              <div class="confirmlist bg-white">
+                <div class="text py-2">
+                  <h3 class="text-center">Confirmation</h3>
                 </div>
-                <div class="lists p-4">
-                  <ul class="px-3">
-                    <li class="my-3 text-muted">It is a long established fact that a reader will be distracted by the readable content layout.</li>
-                    <li class="my-3"><i class="fa-solid fa-phone mx-3"></i>Travel Insureance</li>
-                    <li class="my-3"><i class="fa-solid fa-envelope mx-3"></i></i> Hygienic Vehicle</li>
-                  </ul>
+                <div class="formgroup1">
+                  <label for="" class=" mt-1">Journey Date</label>
+                  <div class="formicon my-3">
+                    <h5>03/12/2022</h5>
+                    <span id="locationspan"></span>
+                  </div>
+                  <p>Surat International Airport -vesu </p>
                 </div>
+                <div class="formgroup1">
+                  <label for="" class=" mt-1">Return Date</label>
+                  <div class="formicon my-3">
+                    <h5>10/01/2023</h5>
+                    <span id="locationspan"></span>
+                  </div>
+                  <p>Surat International Airport -vesu </p>
+                </div>
+                <div class="formgroup1">
+                  <label for="" class=" mt-1">Passanger</label>
+                  <div class="formicon my-3">
+                    <h5>4 Passanger</h5>
+                    <span id="locationspan"></span>
+                  </div>
+                  <p>FamilyTrip</p>
+                </div>
+              </div>
+              <div class="bookbtn mx-2">
+                <button type="submit" class="btn btn-outline-primary btn-book w-100 my-2">
+                  <a href="payment.html" class="text-white">Book Now!</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button type="submit" class="btn btn-outline-danger w-100 my-2">
+                  <a href="index.html" class="tetxdangera">Cancle Now!</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- tourend -->
+    </section>
+  <!-- Plan end -->
 
   <!-- Custom Js File -->
   <script src="js/script.js"></script>

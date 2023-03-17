@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toor Booking - myTrip</title>
+  <title>contact - myTrip</title>
 
   <!-- Bootstrap Css File -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,18 +32,17 @@
         <nav class="menu">
           <ul class="navbar-list d-lg-flex d-none align-items-center">
             <li><a href="index.html" class="me-4"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
-            <li><a href="booking.html" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a></li>
-            <li><a href="#" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
-            <li><a href="about.html" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a></li>
+            <li><a href="booking.html" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a>
+            </li>
+            <li><a href="tour.html" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
+            <li><a href="about.html" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
+            </li>
             <li><a href="contact.html" class="me-4"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
             <button type="button" class="btncustom" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Login
             </button>
           </ul>
         </nav>
-        <!-- <div class="login d-lg-block d-none">
-					Button trigger modal 
-				</div> -->
         <div class="mobile_icon d-lg-none d-block">
           <i class="fa-solid fa-bars bars"></i>
           <i class="fa-solid fa-bars-staggered open"></i>
@@ -59,14 +58,19 @@
       </div>
       <div class="mobile_login">
         <li class="text-center"><img src="images/logo-dark.png" alt="" width="200"></li>
-        <li class="text-center mt-3"></li>
+        <li class="text-center mt-3">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modalcontact"
+            data-bs-target="#exampleModal">
+            Login
+          </button>
+        </li>
       </div>
       <nav>
         <ul class="mobile_navbar_list d-flex flex-column">
           <li class="my-3"><a href="index.html"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
           <li class="my-3"><a href="booking.html"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a>
           </li>
-          <li class="my-3"><a href="#"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
+          <li class="my-3"><a href="tour.html"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
           <li class="my-3"><a href="about.html"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
           </li>
           <li class="my-3"><a href="contact.html"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
@@ -83,13 +87,11 @@
         </ul>
       </div>
     </div>
-
     <!-- Mobile Navigation End -->
-
   </header>
 
-   <!-- Modal -->
-   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -167,6 +169,136 @@
   </div>
 
   <!-- Header Section End -->
+
+  <!-- tour -->
+  <section class="mainflightsec">
+    <div class="container">
+      <div class="flightfirstrow">
+        <div class="flightsec">
+          <div class="flightcaption mb-5">
+            <h1 class="text-center">Our Most Popular Tours</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flightsecondrow">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/01.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Surat <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Dwarka</p>
+                <p class="card-text text-center"> jan 01, 2024 <i class="fa-regular fa-calendar-days"></i> jan 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹990</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/02.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Surat <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Amreli</p>
+                <p class="card-text text-center"> feb 01, 2024 <i class="fa-regular fa-calendar-days"></i> feb 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹380</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/03.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Diu <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Daman</p>
+                <p class="card-text text-center"> mar 01, 2024 <i class="fa-regular fa-calendar-days"></i> mar 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹1199</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/04.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Modhera <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Kutch</p>
+                <p class="card-text text-center"> april 01, 2024 <i class="fa-regular fa-calendar-days"></i> april 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹870</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row my-3">
+          <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/05.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Vadodara <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Saputara</p>
+                <p class="card-text text-center"> may 01, 2024 <i class="fa-regular fa-calendar-days"></i> may 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹990</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/06.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Surat <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Lakshdweep</p>
+                <p class="card-text text-center"> june 01, 2024 <i class="fa-regular fa-calendar-days"></i> june 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹380</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/07.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Anand <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Banglore</p>
+                <p class="card-text text-center"> july 01, 2024 <i class="fa-regular fa-calendar-days"></i> july 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹1199</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 mt-md-0 mt-3">
+            <div class="card p-3" style="width: 20rem; margin: auto;">
+              <img src="images/08.jpg" class="" alt="..." width="100%">
+              <div class="card-body">
+                <p class="card-title text-center fs-5">Bharuch <i class="fa-solid fa-arrow-right-arrow-left mx-2"></i> Delhi</p>
+                <p class="card-text text-center"> aug 01, 2024 <i class="fa-regular fa-calendar-days"></i> aug 30, 2024</p>
+              </div>
+              <div class="card-body d-flex justify-content-evenly">
+                <p href="#" class="card-link d-inline-block fw-bold">Trip : <span class="text-success ">₹870</span></p>
+                <a href="#" class="card-link text-muted">More details..<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- tourend -->
 
   <!-- Custom Js File -->
   <script src="js/script.js"></script>

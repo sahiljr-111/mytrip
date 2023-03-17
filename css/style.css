@@ -119,6 +119,7 @@ li {
     --purple: #7167ff;
     --darkpurple: #4c3fff;
     --black: #333333;
+    --darkblue:#4F4B8B;
 }
 
 /* =================== Header CSS ================= */
@@ -372,6 +373,9 @@ li {
     font-size: 12px;
     font-style: oblique;
     color: red;
+}
+.formauto{
+    height: auto!important;
 }
 /* content */
 .searchwrapper .tabcontent {
@@ -670,4 +674,57 @@ li {
     cursor: pointer;
     transform: scale(1.1);
     transform-origin: center;
+}
+
+
+/* booking list */
+.sortinglist,.confirmsection,.tourselect,.mainflightsec{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: aliceblue;
+}
+.listview{
+    background-color: white;
+    box-shadow: 1px 2px 8px rgba(0 0 0/8%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.flightview{
+    background-color: white;
+    border-radius: 10px;
+}
+.imgboxflight{
+    width: 90px;
+}
+.flight,.datalist{
+    color: var(--darkblue);
+    gap: 30px;
+}
+.btn-book{
+    background-color: var(--purple);
+    color: white;
+    border: none;
+}
+img,.confirmlist,.bookform,.additionlinfo{
+    border-radius: 10px;
+}
+
+/* confirm */
+.verify,.tourselect,.mainflightsec{
+    color: var(--darkblue);
+}
+.formgroup1{
+    margin: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    padding: 20px;
+    border-radius: 10px;
+}
+.tetxdangera {
+    color: #f96768;
+}
+.btn-outline-danger:hover a{
+    color: white!important;
+}
+.px-3 li{
+    font-size: 14px;
 }
