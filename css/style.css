@@ -793,13 +793,26 @@ img,.confirmlist,.bookform,.additionlinfo{
 }
 @media screen and (max-width:1388px) {
     .card{
-        max-width: 15rem;
+        max-width: 17rem;
+    }
+    .card p:last-child{
+        font-size: 14px!important;
+    }
+    .card p:first-child{
+        font-weight: bold;
+        font-size: 16px!important;
+    }
+}
+@media screen and (max-width:1194px) {
+    .card{
+        max-width: 14rem;
     }
     .card p:last-child{
         font-size: 12px!important;
     }
     .card p:first-child{
         font-weight: bold;
-        font-size: 12px!important;
+        font-size: 14px!important;
     }
 }
+
