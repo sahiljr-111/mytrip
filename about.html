@@ -1,182 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - myTrip</title>
+  
+	<!-- Bootstrap Css File -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <!-- Bootstrap Css File -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Font Awesome File -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
 
-  <!-- Font Awesome File -->
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
+	<!-- Custom Css File -->
+	<link rel="stylesheet" href="css/style.css">
 
-  <!-- Custom Css File -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Jquery File -->
-  <script src="js/jquery.js"></script>
+	<!-- Jquery File -->
+	<script src="js/jquery.js"></script>
 
 </head>
-
 <body>
-  <header class="main-header py-3 fixed-top">
-    <div class="container">
-      <div class="header active d-flex justify-content-between align-items-center">
-        <div class="logo">
-          <a href="#"><img src="images/logo-dark.png" alt="" class="img-fluid"></a>
-        </div>
-        <nav class="menu">
-          <ul class="navbar-list d-lg-flex d-none align-items-center">
-            <li><a href="index.html" class="me-4"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
-            <li><a href="booking.html" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a>
-            </li>
-            <li><a href="tour.html" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
-            <li><a href="about.html" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
-            </li>
-            <li><a href="contact.html" class="me-4"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
-            <button type="button" class="btncustom" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Login
-            </button>
-          </ul>
-        </nav>
-        <!-- <div class="login d-lg-block d-none">
-					Button trigger modal 
-				</div> -->
-        <div class="mobile_icon d-lg-none d-block">
-          <i class="fa-solid fa-bars bars"></i>
-          <i class="fa-solid fa-bars-staggered open"></i>
-        </div>
-      </div>
-    </div>
+  	<!-- header Section Start -->
 
-    <!-- Mobile Navigation Start -->
+	<header class="main-header py-3 fixed-top">
+		<div class="container">
+			<div class="header active d-flex justify-content-between align-items-center">
+				<div class="logo">
+					<a href="#"><img src="images/logo-dark.png" alt="" class="img-fluid"></a>
+				</div>
+				<nav class="menu">
+					<ul class="navbar-list d-lg-flex d-none align-items-center">
+						<li><a href="index.html" class="me-4"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
+						<li><a href="about.html" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
+						<!-- <li><a href="#flight" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a></li> -->
+						<li><a href="tour.html" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
+						</li>
+						<li><a href="contact.html" class="me-4"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+						<button type="button" class="btncustom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							Login
+						</button>
+					</ul>
+				</nav>
+			</div>
+		</div>
 
-    <div class="mobile_nav d-lg-none">
-      <div class="close_icon">
-        <i class="fa-solid fa-xmark close text-light"></i>
-      </div>
-      <div class="mobile_login">
-        <li class="text-center"><img src="images/logo-dark.png" alt="" width="200"></li>
-        <li class="text-center mt-3">
-          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Login
-          </button>
-        </li>
-      </div>
-      <nav>
-        <ul class="mobile_navbar_list d-flex flex-column">
-          <li class="my-3"><a href="index.html"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
-          <li class="my-3"><a href="booking.html"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a></li>
-          <li class="my-3"><a href="tour.html"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
-          <li class="my-3"><a href="about.html"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a></li>
-          <li class="my-3"><a href="contact.html"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social_icon mx-4 py-3 border-top border-secondary">
-        <span class="text-light">follow us on</span>
-        <ul class="icon_list d-flex mt-2">
-          <li class="me-3"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-        </ul>
-      </div>
-    </div>
+	</header>
 
-    <!-- Mobile Navigation End -->
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Login in MyTrip</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form class="row g-3">
+						<div class="col-12">
+							<label for="inputEmail4" class="form-label">Email</label>
+							<input type="email" class="form-control" id="inputEmail4">
+						</div>
+						<div class="col-12">
+							<label for="inputPassword4" class="form-label">Password</label>
+							<input type="password" class="form-control" id="inputPassword4">
+						</div>
+						<div class="form-check col-12 mx-3">
+							<input class="form-check-input" type="checkbox" id="gridCheck">
+							<label class="form-check-label" for="gridCheck">
+								Remember me
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Let me in</button>
+				</div>
+				<div class="ms-4 my-4">
+					<span>Don't have account</span><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+						class="text-danger mx-2">create new account</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- inner model -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="staticBackdropLabel">Signup in MyTrip</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form class="row g-3">
+						<div class="col-md-6">
+							<label for="fname" class="form-label">First Name</label>
+							<input type="text" class="form-control" id="fname">
+						</div>
+						<div class="col-md-6">
+							<label for="Lname" class="form-label">Last Name</label>
+							<input type="text" class="form-control" aria-label="Lname">
+						</div>
+						<div class="col-12">
+							<label for="inputEmail4" class="form-label">Email</label>
+							<input type="email" class="form-control" id="inputEmail4">
+						</div>
+						<div class="col-12">
+							<label for="inputPassword4" class="form-label">Password</label>
+							<input type="password" class="form-control" id="inputPassword4">
+						</div>
+						<div class="col-12">
+							<label for="Contact" class="form-label">Contact</label>
+							<input type="text" class="form-control" id="contact">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success">count me in</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  </header>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Login in MyTrip</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="row g-3">
-            <div class="col-12">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-12">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="form-check col-12 mx-3">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Remember me
-              </label>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Let me in</button>
-        </div>
-        <div class="ms-4 my-4">
-          <span>Don't have account</span><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-            class="text-danger mx-2">create new account</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- inner model -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Signup in MyTrip</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label for="fname" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="fname">
-            </div>
-            <div class="col-md-6">
-              <label for="Lname" class="form-label">Last Name</label>
-              <input type="text" class="form-control" aria-label="Lname">
-            </div>
-            <div class="col-12">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-12">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="Contact" class="form-label">Contact</label>
-              <input type="text" class="form-control" id="contact">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">count me in</button>
-        </div>
+	<!-- Header Section End -->
+
+  <!-- about section -->
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="images/logo-dark.png" alt="" width="auto" height="57">
+    <h3 class="display-5 ">We care for you</h3>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur est ut aspernatur cumque assumenda asperiores fugiat iure quibusdam eos quam dolorum numquam atque perspiciatis esse libero, provident culpa. Laudantium, quasi!</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a type="button" href="contact.html" class="btn btn-primary btn btn-book px-4 gap-3">Contact with us</a>
+        <a type="button" href="index.html" class="btn btn-outline-secondary btn px-4">See more...</a>
       </div>
     </div>
   </div>
 
-  <!-- Header Section End -->
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5">Get in touch</h1>
+    <div class="col-lg-6 mx-auto">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center socialicon">
+        <a href="#" class="mx-3"><i class="fa-solid fa-envelope fs-5 mx-2"></i>mytrip@gmail.com</a>
+        <a href="#" class="mx-3"><i class="fa-brands fa-facebook fs-5 mx-2"></i>mytip111</a>
+        <a href="#" class="mx-3"><i class="fa-brands fa-square-instagram fs-5 mx-2"></i>mytrip111</a>
+        <a href="#" class="mx-3"><i class="fa-brands fa-linkedin fs-5 mx-2"></i>mytrip111</a>
+      </div>
+    </div>
+  </div>
 
-  <!-- Custom Js File -->
-  <script src="js/script.js"></script>
-  <script src="js/search.js"></script>
+  <!-- about end -->
 
-  <!-- Bootstrap js File -->
-  <script src="js/bootstrap.js"></script>
+
+
+
+  
+	<!-- Custom Js File -->
+	<script src="js/script.js"></script>
+	<script src="js/search.js"></script>
+
+	<!-- Bootstrap js File -->
+	<script src="js/bootstrap.js"></script>
 </body>
-
 </html>

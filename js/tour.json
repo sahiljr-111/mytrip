@@ -1,0 +1,90 @@
+[
+  {
+    "id":"1",
+    "url": "images/01.jpg",
+    "location": "Surat",
+    "destination": "Dwarka",
+    "startdate": "jan 01, 2024",
+    "enddate": "jan 30, 2024",
+    "ticket": "₹990",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  },
+  {
+    "id":"2",
+    "url": "images/02.jpg",
+    "location": "Surat",
+    "destination": "Amreli",
+    "startdate": "feb 01, 2024",
+    "enddate": "feb 30, 2024",
+    "ticket": "₹380",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  },
+  {
+    "id":"3",
+    "url": "images/03.jpg",
+    "location": "Diu",
+    "destination": "Daman",
+    "startdate": "mar 01, 2024",
+    "enddate": "mar 30, 2024",
+    "ticket": "₹1199",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  },
+  {
+    "id":"4",
+    "url": "images/04.jpg",
+    "location": "Modhera",
+    "destination": "Kutch",
+    "startdate": "april 01, 2024",
+    "enddate": "april 30, 2024",
+    "ticket": "₹870",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  },
+  {
+    "id":"5",
+    "url": "images/05.jpg",
+    "location": "Vadodara",
+    "destination": "Saputara",
+    "startdate": "mau 01, 2024",
+    "enddate": "mau 30, 2024",
+    "ticket": "₹990",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  },
+  {
+    "id":"6",
+    "url": "images/06.jpg",
+    "location": "Surat",
+    "destination": "Lakshdweep",
+    "startdate": "june 01, 2024",
+    "enddate": "june 30, 2024",
+    "ticket": "₹380",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  },
+  {
+    "id":"7",
+    "url": "images/07.jpg",
+    "location": "Anand",
+    "destination": "Banglore",
+    "startdate": "july 01, 2024",
+    "enddate": "july 30, 2024",
+    "ticket": "₹1199",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  },
+  {
+    "id":"8",
+    "url": "images/08.jpg",
+    "location": "Bharuch",
+    "destination": "Delhi",
+    "startdate": "aug 01, 2024",
+    "enddate": "aug 30, 2024",
+    "ticket": "₹870",
+    "rating":"4.5/5",
+    "describe":"An airline is a company that provides air transport services for traveling passengers and/or freight. in which they both offer and operate the same flight."
+  }
+]

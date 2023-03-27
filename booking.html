@@ -32,64 +32,17 @@
         <nav class="menu">
           <ul class="navbar-list d-lg-flex d-none align-items-center">
             <li><a href="index.html" class="me-4"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
-            <li><a href="booking.html" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a></li>
-            <li><a href="tour.html" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
             <li><a href="about.html" class="me-4"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a></li>
+            <!-- <li><a href="booking.html" class="me-4"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a></li> -->
+            <li><a href="tour.html" class="me-4"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
             <li><a href="contact.html" class="me-4"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
             <button type="button" class="btncustom" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Login
             </button>
           </ul>
         </nav>
-        <!-- <div class="login d-lg-block d-none">
-					Button trigger modal 
-				</div> -->
-        <div class="mobile_icon d-lg-none d-block">
-          <i class="fa-solid fa-bars bars"></i>
-          <i class="fa-solid fa-bars-staggered open"></i>
-        </div>
       </div>
     </div>
-
-    <!-- Mobile Navigation Start -->
-
-    <div class="mobile_nav d-lg-none">
-      <div class="close_icon">
-        <i class="fa-solid fa-xmark close text-light"></i>
-      </div>
-      <div class="mobile_login">
-        <li class="text-center"><img src="images/logo-dark.png" alt="" width="200"></li>
-        <li class="text-center mt-3">
-          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Login
-          </button>
-        </li>
-      </div>
-      <nav>
-        <ul class="mobile_navbar_list d-flex flex-column">
-          <li class="my-3"><a href="index.html"><i class="fa-solid fa-house-chimney me-2"></i>Home</a></li>
-          <li class="my-3"><a href="booking.html"><i class="fa-solid fa-plane-departure me-2"></i>Flight</a>
-          </li>
-          <li class="my-3"><a href="tour.html"><i class="fa-solid fa-user-group me-2"></i>Tour</a></li>
-          <li class="my-3"><a href="about.html"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>About</a>
-          </li>
-          <li class="my-3"><a href="contact.html"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social_icon mx-4 py-3 border-top border-secondary">
-        <span class="text-light">follow us on</span>
-        <ul class="icon_list d-flex mt-2">
-          <li class="me-3"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li class="me-3"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Mobile Navigation End -->
-
   </header>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -182,9 +135,8 @@
           <div class="results">
             <div class="countsdown">
               <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                  aria-expanded="true">
-                  Dropdown button
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Sort By Time
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -198,17 +150,17 @@
       </div>
       <div class="flightview my-4">
         <div class="container">
-          <div class="flightviewdetails p-4 d-md-flex align-items-center justify-content-between">
-            <div class="flight d-md-flex align-items-center justify-content-center">
-              <div class="contant d-flex align-items-center">
+          <div class="flightviewdetails py-5 px-4 d-lg-flex align-items-center justify-content-between ">
+            <div class="flight d-lg-flex align-items-center justify-content-center">
+              <div class="contant d-flex align-items-center justify-content-center">
                 <div class="imgboxflight">
                   <img src="images/airline.png" alt="" width="100%">
                 </div>
                 <h5>India</h5>
               </div>
               <div class="flightdata">
-                <div class="datalist d-flex align-items-center">
-                  <div class="start d-flex align-items-center">
+                <div class="datalist d-flex align-items-center justify-content-center my-2 my-lg-0">
+                  <div class="start d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="starticon">
                       <i class="fa-solid fa-plane-departure me-2 fs-2"></i>
                     </div>
@@ -222,7 +174,7 @@
                     <span>Non Stop</span>
                     <i class="fa-solid fa-arrow-right-long"></i>
                   </div>
-                  <div class="end d-flex align-items-center">
+                  <div class="end d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="endttime">
                       <h6>08:45</h6>
                       <span>Amreli</span>
@@ -234,7 +186,7 @@
                 </div>
               </div>
             </div>
-            <div class="pricelist d-flex align-items-center">
+            <div class="pricelist d-flex align-items-center justify-content-center my-2 my-lg-0">
               <div class="price mx-3">
                 <strike>₹5,489</strike>
                 <span class="fw-bold text-success fs-5 mx-1">₹4,800</span>
@@ -252,17 +204,17 @@
       <!--  -->
       <div class="flightview my-4">
         <div class="container">
-          <div class="flightviewdetails p-4 d-md-flex align-items-center justify-content-between">
-            <div class="flight d-md-flex align-items-center justify-content-center">
-              <div class="contant d-flex align-items-center">
+          <div class="flightviewdetails py-5 px-4 d-lg-flex align-items-center justify-content-between">
+            <div class="flight d-lg-flex align-items-center justify-content-center my-2 my-lg-0">
+              <div class="contant d-flex align-items-center justify-content-center my-2 my-lg-0">
                 <div class="imgboxflight">
                   <img src="images/airline-7.png" alt="" width="100%">
                 </div>
                 <h5>Delta</h5>
               </div>
               <div class="flightdata">
-                <div class="datalist d-flex align-items-center">
-                  <div class="start d-flex align-items-center">
+                <div class="datalist d-flex align-items-center justify-content-center my-2 my-lg-0">
+                  <div class="start d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="starticon">
                       <i class="fa-solid fa-plane-departure me-2 fs-2"></i>
                     </div>
@@ -279,7 +231,7 @@
                     <i class="fa-solid fa-arrow-right-long"></i>
                     <p class="text-center text-muted">Hold 15min</p>
                   </div>
-                  <div class="end d-flex align-items-center">
+                  <div class="end d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="endttime">
                       <h6>10:50</h6>
                       <span>Amreli</span>
@@ -292,7 +244,7 @@
                 <!--  -->
               </div>
             </div>
-            <div class="pricelist d-flex align-items-center">
+            <div class="pricelist d-flex align-items-center justify-content-center my-2 my-lg-0">
               <div class="price mx-3">
                 <strike>₹5,489</strike>
                 <span class="fw-bold text-success fs-5 mx-1">₹4,800</span>
@@ -310,17 +262,17 @@
       <!--  -->
       <div class="flightview my-4">
         <div class="container">
-          <div class="flightviewdetails p-4 d-md-flex align-items-center justify-content-between">
-            <div class="flight d-md-flex align-items-center justify-content-center">
-              <div class="contant d-flex align-items-center">
+          <div class="flightviewdetails py-5 px-4 d-lg-flex align-items-center justify-content-between">
+            <div class="flight d-lg-flex align-items-center justify-content-center">
+              <div class="contant d-flex align-items-center justify-content-center my-2 my-lg-0">
                 <div class="imgboxflight">
                   <img src="images/airline-7.png" alt="" width="100%">
                 </div>
                 <h5>India</h5>
               </div>
               <div class="flightdata">
-                <div class="datalist d-flex align-items-center">
-                  <div class="start d-flex align-items-center">
+                <div class="datalist d-flex align-items-center justify-content-center my-2 my-lg-0">
+                  <div class="start d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="starticon">
                       <i class="fa-solid fa-plane-departure me-2 fs-2"></i>
                     </div>
@@ -334,7 +286,7 @@
                     <span>Non Stop</span>
                     <i class="fa-solid fa-arrow-right-long"></i>
                   </div>
-                  <div class="end d-flex align-items-center">
+                  <div class="end d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="endttime">
                       <h6>08:45</h6>
                       <span>Amreli</span>
@@ -346,7 +298,7 @@
                 </div>
               </div>
             </div>
-            <div class="pricelist d-flex align-items-center">
+            <div class="pricelist d-flex align-items-center justify-content-center my-2 my-lg-0">
               <div class="price mx-3">
                 <strike>₹5,489</strike>
                 <span class="fw-bold text-success fs-5 mx-1">₹4,800</span>
@@ -364,17 +316,17 @@
       <!--  -->
       <div class="flightview my-4">
         <div class="container">
-          <div class="flightviewdetails p-4 d-md-flex align-items-center justify-content-between">
-            <div class="flight d-md-flex align-items-center justify-content-center">
-              <div class="contant d-flex align-items-center">
+          <div class="flightviewdetails py-5 px-4 d-lg-flex align-items-center justify-content-between">
+            <div class="flight d-lg-flex align-items-center justify-content-center">
+              <div class="contant d-flex align-items-center justify-content-center my-2 my-lg-0">
                 <div class="imgboxflight">
                   <img src="images/airline.png" alt="" width="100%">
                 </div>
                 <h5>India</h5>
               </div>
               <div class="flightdata">
-                <div class="datalist d-flex align-items-center">
-                  <div class="start d-flex align-items-center">
+                <div class="datalist d-flex align-items-center justify-content-center my-2 my-lg-0">
+                  <div class="start d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="starticon">
                       <i class="fa-solid fa-plane-departure me-2 fs-2"></i>
                     </div>
@@ -391,7 +343,7 @@
                     <i class="fa-solid fa-arrow-right-long"></i>
                     <p class="text-center text-muted">Hold 15min</p>
                   </div>
-                  <div class="end d-flex align-items-center">
+                  <div class="end d-flex align-items-center justify-content-center my-2 my-lg-0">
                     <div class="endttime">
                       <h6>08:45</h6>
                       <span>Amreli</span>
@@ -403,7 +355,7 @@
                 </div>
               </div>
             </div>
-            <div class="pricelist d-flex align-items-center">
+            <div class="pricelist d-flex align-items-center justify-content-center my-2 my-lg-0">
               <div class="price mx-3">
                 <strike>₹5,489</strike>
                 <span class="fw-bold text-success fs-5 mx-1">₹4,800</span>
